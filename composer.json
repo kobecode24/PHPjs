@@ -1,0 +1,13 @@
+{
+    "name": "youcode/ph-pjs",
+    "authors": [
+        {
+            "name": "kobe",
+            "email": "youcode@skiff.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "ext-mysqli": "*"
+    }
+}

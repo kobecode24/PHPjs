@@ -1,7 +1,11 @@
 <?php
+require_once '../controller/auth/LoginController.php';
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header('Location: /PHPjs/views/user_home.php');
+    exit;
+}
 $title = 'Sign Up Page';
 $hideBurgerMenu = true;
-require_once "../controller/auth/sign-upController.php";
 require_once '../includes/header.php'
 ?>
 

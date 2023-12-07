@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt->close();
                 $conn->close();
 
-                header('Location: ' . ($isadmin ? '/admin_dashboard.php' : '/PHPjs/views/user_home.php'));
+                header('Location: ' . ($isadmin ? '/PHPjs/views/filmsView.php' : '/PHPjs/views/user_home.php'));
                 exit;
             } else {
                 $_SESSION['login_error'] = "Incorrect password.";

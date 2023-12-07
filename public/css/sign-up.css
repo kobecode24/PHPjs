@@ -100,16 +100,54 @@ footer i:hover {
 }
 @media only screen and (max-width: 768px){
     .sign-up-container{
-        width: 90%;  
+        width: 90%;
     }
     .w-sm-100 {
-    width: 95%;
+        width: 95%;
     }
 }
 
 .error {
-    color: red;         /* Red text color for errors */
-    font-size: 0.9em;   /* Slightly smaller font size */
-    margin-top: 5px;    /* Margin at the top for spacing */
-    display: block;     /* Display as block to ensure it appears on a new line */
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
 }
+
+/* ================================= start the nav ========================== */
+nav .burger-menu {
+    cursor: pointer;
+}
+nav .container .sub-menu {
+    background-color: #121212;
+    position: absolute;
+    top: -600%; left: 7%;
+    z-index: 999;
+    min-width: 300px;
+    transition: var(--main-transition);
+}
+nav .container .sub-menu.active {
+    top: 100%;
+}
+nav .container .sub-menu ul {
+    width: 100%;
+    padding: 0;
+}
+nav .container .sub-menu ul li {
+    text-align: center;
+    color: #fff;
+    background-color: #121212;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+nav .container .sub-menu ul li a {
+    display: inline-block;
+    width: 100%;
+    padding-block: 18px;
+    color: white;
+}
+nav .container .sub-menu ul li:hover {
+    background-color: #181818;
+}
+/* ================================= end the nav ========================== */
